@@ -1,0 +1,212 @@
+/* Колір основного тексту #212121 */
+/* Колір вторинного тексту #757575 #FFFFFF */
+/* Колір основного фону #FFFFFF */
+/* Допоміжний колір фону #F5F4FA */
+/* Колір хедеру #FFFFFF */
+/* Колір футеру #2F303A */
+/* Колір тексту футера rgba(255, 255, 255, 0.6) */
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --additional-text-color: #FFFFFF;
+    --main-bg-color: #FFFFFF;
+    --secondary-bg-color: #F5F4FA;
+    --header-color: #FFFFFF;
+    --style-design-color: #2196F3;
+    --logo-design-color: #000000;
+    --logo-footer-color: #FFFFFF;
+    --footer-color: #2F303A;
+    --text-address-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--primary-text-color);
+    font-family: 'Roboto', 'Raleway', sans-serif;
+}
+
+/* Список */
+
+.nav {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.nav-link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+
+/* header */
+
+
+.hidden-title {
+    display:none
+}
+.link {
+    text-decoration: none;
+}
+.link.current{
+    color: var(--style-design-color);
+}
+.nav-list {
+    font-size: 14px;
+}
+
+/* Зв'язок, телефон і мейл */
+
+.connection {
+    font-size: 14px;
+    color: var(--secondary-text-color);
+}
+.connection-link {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+.connection :hover, .connection :focus {
+    color:var(--style-design-color);
+}
+
+/* Логотип */
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--style-design-color);
+
+}
+.logo-design {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--logo-design-color);
+}
+
+/* Основа */
+
+.section p {
+    color: var(--secondary-text-color);
+}
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* Банер */
+
+.banner {
+    text-transform: uppercase;
+    color: var(--additional-text-color);
+    background-color: var(--footer-color);
+}
+.banner-title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    text-align: center;
+}
+.banner-button {
+    font-size: 16;
+    font-weight: 700;
+    line-height: 1.875;
+    text-align: center;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 4px;
+    color: var(--additional-text-color);
+    background-color: var(--style-design-color);
+}
+.banner-button:hover, .banner-button:focus {
+
+}
+
+/* блок "Особливості" */
+
+.section-list h3 {
+    text-transform: uppercase;
+}
+.list-title {
+    font-size: 14px;
+    font-weight: 700;
+}
+.list-text {
+    font-size: 14px;
+    line-height: 1.714;
+}
+
+/* Блок "Наша команда" */
+
+.section-team {
+    background-color: var(--secondary-bg-color);
+}
+.list-name {
+    font-size: 16px;
+    text-align: center;
+}
+.job-title {
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* Сторінка Портфоліо */
+/* Фільтр портфоліо */
+
+
+.portfolio-button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.625;
+    cursor: pointer;
+    border: transparent;
+    text-align: center;
+    border-radius: 4px;
+    background-color: var(--secondary-bg-color);
+}
+.portfolio-button:hover, .portfolio-button:focus {
+    background-color: var(--style-design-color);
+}
+
+/* Проекти портфоліо*/
+
+.portfolio-title {
+    font-size: 18;
+    font-weight: 700;
+    line-height: 2;
+    color: var(--primary-text-color);
+}
+.description {
+    font-size: 16px;
+    line-height: 1.875;
+    color: var(--secondary-text-color);
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--footer-color);
+}
+.logo-design-footer {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--logo-footer-color);
+}
+.footer-link {
+    text-decoration: none;
+    font-style: normal;
+    color: var(--text-address-color);
+}
+.address {
+    font-size: 14px;
+    line-height: 1.714;
+}
+.address :hover {
+    color: var(--additional-text-color);
+}
