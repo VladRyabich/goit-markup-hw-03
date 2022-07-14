@@ -9,14 +9,14 @@
 :root {
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
-    --additional-text-color: #ffffff;
-    --main-bg-color: #ffffff;
-    --secondary-bg-color: #f5f4fa;
-    --header-color: #ffffff;
-    --style-design-color: #2196f3;
+    --additional-text-color: #FFFFFF;
+    --main-bg-color: #FFFFFF;
+    --secondary-bg-color: #F5F4FA;
+    --header-color: #FFFFFF;
+    --style-design-color: #2196F3;
     --logo-design-color: #000000;
-    --logo-footer-color: #ffffff;
-    --footer-color: #2f303a;
+    --logo-footer-color: #FFFFFF;
+    --footer-color: #2F303A;
     --text-address-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -24,6 +24,17 @@ body {
     background-color: var(--main-bg-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', 'Raleway', sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+
+/* Контейнер */
+
+.container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
 /* Список */
@@ -31,6 +42,7 @@ body {
 .nav {
     color: var(--primary-text-color);
     text-decoration: none;
+    display: flex;
 }
 .nav-link {
     color: var(--primary-text-color);
@@ -38,6 +50,7 @@ body {
 }
 .list {
     list-style: none;
+    display: flex;
 }
 
 /* header */
@@ -53,18 +66,22 @@ body {
     color: var(--style-design-color);
 }
 .nav-list {
-    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
 }
 
 /* Зв'язок, телефон і мейл */
 
 .connection {
-    font-size: 14px;
     color: var(--secondary-text-color);
+    font-weight: 500;
+    display: flex;
 }
 .connection-link {
     text-decoration: none;
     color: var(--secondary-text-color);
+    letter-spacing: 0.02em;
 }
 .connection :hover, .connection :focus {
     color:var(--style-design-color);
@@ -76,6 +93,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
+    line-height: 31px;
     text-decoration: none;
     color: var(--style-design-color);
 
@@ -84,11 +102,14 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
+    line-height: 31px;
     color: var(--logo-design-color);
 }
 
 /* Основа */
-
+.section {
+    padding: 94px 0 94px 0;
+}
 .section p {
     color: var(--secondary-text-color);
 }
@@ -102,6 +123,7 @@ body {
 
 .banner {
     text-transform: uppercase;
+    text-align: center;
     color: var(--additional-text-color);
     background-color: var(--footer-color);
 }
@@ -110,14 +132,16 @@ body {
     font-weight: 900;
     line-height: 1.36;
     text-align: center;
+    letter-spacing: 0.06em;
 }
 .banner-button {
-    font-size: 16;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.875;
-    text-align: center;
+    letter-spacing: 0.06em;
     cursor: pointer;
-    border: transparent;
+    border: 0;
+    margin: 0 auto;
     border-radius: 4px;
     color: var(--additional-text-color);
     background-color: var(--style-design-color);
@@ -148,10 +172,12 @@ body {
 .list-name {
     font-size: 16px;
     text-align: center;
+    line-height: 19px;
 }
 .job-title {
     font-size: 16px;
     text-align: center;
+    line-height: 19px;
 }
 
 
@@ -171,14 +197,16 @@ body {
 }
 .portfolio-button:hover, .portfolio-button:focus {
     background-color: var(--style-design-color);
+    color: var(--additional-text-color);
 }
 
 /* Проекти портфоліо*/
 
 .portfolio-title {
-    font-size: 18;
+    font-size: 18px;
     font-weight: 700;
     line-height: 2;
+    letter-spacing: 0.06em;
     color: var(--primary-text-color);
 }
 .description {
@@ -196,6 +224,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
+    line-height: 31px;
     color: var(--logo-footer-color);
 }
 .footer-link {
