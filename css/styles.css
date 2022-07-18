@@ -54,7 +54,7 @@ img {
 /* Контейнер */
 
 .container {
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -69,6 +69,7 @@ img {
 .header-body {
     display: flex;
     flex-direction: row;
+    margin-left: auto;
     justify-content: space-between;
 }
 .nav {
@@ -82,7 +83,6 @@ img {
 }
 .list {
     list-style: none;
-    display: flex;
 }
 
 .hidden-title {
@@ -90,7 +90,7 @@ img {
 }
 .link {
     text-decoration: none;
-    padding: 32px 25px;
+    padding: 32px 0px;
 }
 .link.current{
     color: var(--style-design-color);
@@ -98,11 +98,15 @@ img {
 .nav-list {
     margin-left: 93px;
     font-weight: 500;
-    line-height: 16px;
+    line-height: 1.142;
     letter-spacing: 0.02em;
 }
 .nav-list-menu {
     display: inline-block;
+    margin-right: 50px;
+}
+.nav-list-menu:last-child {
+    margin-right: 0px;
 }
 
 /* Зв'язок, телефон і мейл */
@@ -113,10 +117,16 @@ img {
     font-weight: 500;
 }
 .connection-link {
-    padding: 32px 25px;
+    padding: 32px 0px;
     text-decoration: none;
     color: var(--secondary-text-color);
     letter-spacing: 0.02em;
+}
+.connection-list {
+    margin-right: 50px;
+}
+.connection-list:last-child {
+    margin-right: 0px;
 }
 .connection :hover, .connection :focus {
     color:var(--style-design-color);
@@ -131,7 +141,7 @@ img {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
-    line-height: 31px;
+    line-height: 1.192;
     text-decoration: none;
     color: var(--style-design-color);
 
@@ -140,13 +150,15 @@ img {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
-    line-height: 31px;
+    line-height: 1.192;
     color: var(--logo-design-color);
 }
 
 /* Основа */
-.section:not(:last-child) {
-    margin-bottom: 94px;
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .section p {
     color: var(--secondary-text-color);
@@ -155,7 +167,8 @@ img {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
-    padding-bottom: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 /* Банер */
@@ -163,20 +176,20 @@ img {
 .banner {
     height: 600px;
     min-width: 1600px;
-    text-transform: uppercase;
+    padding: 200px 0;
     text-align: center;
-    color: var(--additional-text-color);
     background-color: var(--footer-color);
 }
 .banner-title {
-    padding-top: 200px;
     max-width: 696px;
     margin: 0 auto 30px;
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
+    text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.06em;
+    color: var(--additional-text-color);
 }
 .banner-button {
     font-size: 16px;
@@ -203,10 +216,14 @@ img {
 .list-specialty {
     padding-right: 30px;
 }
+.list-special {
+    display: flex;
+}
 .list-title {
     font-size: 14px;
     font-weight: 700;
-    padding-bottom: 10px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .list-text {
     font-size: 14px;
@@ -215,10 +232,16 @@ img {
 
 /* Чим ми займаємся */
 
-.list-team {
+.section-engage {
+    padding-top: 0px;
+}
+.list-engage {
+    display: flex;
+}
+.list-img {
     margin-right: 30px;
 }
-.list-team:last-child {
+.list-img:last-child {
     margin-right: 0;
 }
 
@@ -227,13 +250,17 @@ img {
 .section-team {
     background-color: var(--secondary-bg-color);
 }
+.list-team {
+    display: flex;
+}
 .title-team {
-    padding-top: 94px;
+
 }
 .list-name {
     font-size: 16px;
+    font-weight: 500;
     text-align: center;
-    line-height: 19px;
+    line-height: 1.1875;
     padding: 30px 0 10px 0;
 }
 .job-title {
@@ -242,7 +269,7 @@ img {
     line-height: 19px;
     padding-bottom: 30px;
 }
-.list-team {
+.list-img {
     display: flex;
     flex-direction: row;    
     justify-content: space-between;
@@ -251,7 +278,6 @@ img {
     margin-right: 30px;
     background-color: var(--main-bg-color);
     border-radius: 0px 0px 4px 4px;
-    margin-bottom: 94px;
     box-shadow: 0px 1px 3px 
     rgba(0, 0, 0, 0.12), 0px 1px 1px 
     rgba(0, 0, 0, 0.14), 0px 2px 1px 
@@ -294,7 +320,6 @@ img {
 .list-bt-portfolio {
     display: flex;
     justify-content: center;
-    margin-top: 94px;
     margin-bottom: 50px;
 }
 .portfolio-title {
@@ -302,6 +327,7 @@ img {
     font-weight: 700;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
     color: var(--primary-text-color);
 }
 .description {
@@ -314,7 +340,6 @@ img {
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
-    width: 1200px;
 }
 .img-portfolio {
     flex-basis: calc(100% / 3 - 30px);
@@ -322,21 +347,13 @@ img {
     margin-bottom: 30px;
     width: 370px;
     background-color: var(--main-bg-color);
+}
+.div-container {
+    padding: 20px 24px 20px 24px;
     border-left: 1px solid var(--portfolio-border-color);
     border-right: 1px solid var(--portfolio-border-color);
     border-bottom: 1px solid var(--portfolio-border-color);
-}
-.img-portfolio:nth-last-child(-n + 3) {
-    margin-bottom: 94px;
-}
-.div-container {
     
-}
-.portfolio-title {
-    padding: 20px 24px 4px 24px;
-}
-.description {
-    padding: 0px 24px 20px 24px;
 }
 
 /* footer */
@@ -345,13 +362,12 @@ img {
     background-color: var(--footer-color);
 }
 .logo-footer {
-    display: flex;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
-    line-height: 31px;
+    line-height: 1.192;
     text-decoration: none;
     color: var(--style-design-color);
 }
@@ -359,7 +375,7 @@ img {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
-    line-height: 31px;
+    line-height: 1.192;
     color: var(--logo-footer-color);
 }
 .footer-link {
@@ -379,5 +395,10 @@ img {
 .list-address {
     display: flex;
     flex-direction: column;
-    padding-bottom: 60px;
+}
+.list-footer {
+    margin-bottom: 9px;
+}
+.list-footer:last-child {
+    margin-bottom: 60px;
 }
